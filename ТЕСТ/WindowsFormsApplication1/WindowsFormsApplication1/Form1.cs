@@ -40,27 +40,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int Hour = (int)numericUpDown1.Value;
-            int Minutes = (int)numericUpDown2.Value;
-            if (checkBox1.Checked == false && checkBox2.Checked == false)
-                {
-                MessageBox.Show("Ошибка! Необходимо выбрать действия ПК");
-            } else if(checkBox1.Checked == true && checkBox2.Checked == true)
-            {
-                MessageBox.Show("Ошибка! Невозможен выбор нескольких вариантов!");
-            } else if (checkBox1.Checked == true)
-            {
-                
-                ShowMessage SM = new ShowMessage("shutdown", Hour, Minutes);
-                OpenShutOrReset OSoR = new OpenShutOrReset("shutdown", Hour, Minutes);
-
-            }
-            else if (checkBox2.Checked == true)
-            {
-                
-                ShowMessage ShutPC = new ShowMessage("reset", Hour, Minutes);
-                OpenShutOrReset OSoR1 = new OpenShutOrReset("reset", Hour, Minutes);
-            }
+            
         }
     }
 }

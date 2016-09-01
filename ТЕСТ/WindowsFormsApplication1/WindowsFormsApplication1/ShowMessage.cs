@@ -9,10 +9,13 @@ namespace WindowsFormsApplication1
 {
     class ShowMessage
     {
+        public string TextForMass = "qwe";
+        MessageBox
         public ShowMessage(string text)
         {
             MessageBox.Show(text);
         }
+        
         public ShowMessage(string resetORshutdown, int Hour, int Minutes)
         {
             if(resetORshutdown =="reset")
